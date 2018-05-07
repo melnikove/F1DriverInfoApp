@@ -1,0 +1,194 @@
+@headerColor:magenta;
+@rowColor:#99FF99;
+
+body {
+	background-color: white;
+}
+
+#root{ 
+	display:flex;
+	justify-content: center;
+	width:100%;
+}
+
+.driversList{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width:50%;
+	h1{
+		text-align: center;
+		width:100%;
+	}
+	.tblDriversList {
+		border: 1px solid black;
+		border-collapse: collapse;
+		width:100%;
+		.tblDriversListHeader {
+			background-color:@headerColor;
+		}
+		.tblDriversListRow:hover {
+			background-color:@rowColor;
+		}
+		td {
+			border: 1px solid black;
+			text-align: center;
+		}
+		th {
+			border: 1px solid black;
+			text-align: center;
+		}
+	}
+	.blockSelect{
+		width:100%;
+		display:flex;
+		justify-content: center;	
+	}
+
+}
+
+.driverRaceResults{
+    width:75%;
+    h1{
+		text-align: center;
+		width:100%;
+	}
+	.raceResults{
+	    width:100%;
+	    h3{
+	    	text-align: center;
+	    }
+		.tblRaceResult{
+			width:100%;
+			border-collapse: collapse;
+			border: 1px solid black;
+			tr{
+				border: 1px solid black;
+				td{
+					border: 1px solid black;
+					text-align: center;
+				}
+				th{
+					border: 1px solid black;
+					text-align: center;
+				}
+			}
+			.raceResultHeader{
+				width:100%;
+				background-color:@headerColor;
+			}
+			.tblDriverRaceResultsRow:hover {
+				background-color:@rowColor;
+			}
+			tr{
+				width:100%;
+				.hdrPos{
+					width:16%;
+				}
+				.hdrNum{
+					width:4%;
+				}
+				.hdrName{
+					width:18%;
+				}
+				.hdrConstructor{
+					width:16%;
+				}
+				.hdrLaps{
+					width:8%;
+				}
+				.hdrGrid{
+					width:8%;
+				}
+				.hdrTime{
+					width:13%;
+				}
+				.hdrStatus{
+					width:11%;
+				}
+				.hdrPoints{
+					width:8%;
+				}
+			}
+			tr{
+				width:100%;
+				.pos{
+					width:16%;
+				}
+				.num{
+					width:4%;
+				}
+				.name{
+					width:18%;
+				}
+				.constructor{
+					width:16%;
+				}
+				.laps{
+					width:8%;
+				}
+				.grid{
+					width:8%;
+				}
+				.time{
+					width:13%;
+				}
+				.status{
+					width:11%;
+				}
+				.points{
+					width:8%;
+				}
+			}
+		}
+		.splitTable
+		{
+			width:100%;
+			height:21px;
+		}
+		
+	}
+	
+}
+
+
+.driverInfo{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width:50%;
+	h1{
+		text-align: center;
+		width:100%;
+	}
+	.tblDriverInfo{
+		width:100%;
+		border-collapse: collapse;
+		border: 1px solid black;
+		tr{
+			td{
+				border: 1px solid black;
+				text-align: center;
+			}
+			.hdrDriverId, .hdrName, .hdrDateOfBirth, .hdrNationality, .hdrInfo{
+				background-color:@headerColor;
+			}
+
+			.driverId:hover {
+				background-color:@rowColor;
+			}
+			.name:hover {
+				background-color:@rowColor;
+			}
+			.dateOfBirth:hover {
+				background-color:@rowColor;
+			}
+			.nationality:hover {
+				background-color:@rowColor;
+			} 
+			.info:hover {
+				background-color:@rowColor;
+			}
+		}
+	}
+}
